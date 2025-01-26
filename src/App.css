@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212; /* Dark background for the entire site */
+  color: white; /* Light text for better contrast */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  color: white;
+}
+
+.hero-section {
+  text-align: center;
+  background-size: cover;
+  color: white;
+}
+
+.card {
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
