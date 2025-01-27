@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import ContentGrid from '../components/ContentGrid'; // Import ContentGrid
+import { red } from '@mui/material/colors';
 
 const HeroSection = () => {
   return (
