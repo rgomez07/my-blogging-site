@@ -1,45 +1,37 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import { Box, Typography } from '@mui/material';
+import ContentGrid from '../components/ContentGrid'; // Import ContentGrid
 
-const App = () => {
+const HeroSection = () => {
   return (
     <div>
-      {/* Navbar */}
-      {/* <Navbar /> */}
-
-      {/* Banner Image */}
+      {/* Hero Section with Banner */}
       <Box
         sx={{
           backgroundImage: "url('/banner.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          height: '400px', // Set a fixed height
-          width: '100%', // Optional, depending on layout
-          border: '2px solid red',
+          height: { xs: '250px', sm: '300px', md: '400px' },
+          width: '100%',
+          color: 'white',
+          textAlign: 'center',
+          paddingTop: { xs: '90px', md: '150px' },
+          textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)',
         }}
       >
-        {/* Optional text overlay */}
         <Typography
           variant='h3'
           sx={{
-            color: '#ffffff',
             fontWeight: 'bold',
-            textAlign: 'center',
-            paddingTop: '120px', // Vertically center text
-            textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)',
           }}
         >
-          Welcome to Rigo's adventures
+          Welcome to Rigo's Adventures
         </Typography>
       </Box>
-
-      {/* Page Content */}
-      <Box p={4}>
-        <Typography variant='body1'>Future insight into latest blog</Typography>
-      </Box>
+      {/* Content Grid */}
+      <ContentGrid /> {/* Display Content Grid below the banner */}
     </div>
   );
 };
 
-export default App;
+export default HeroSection;

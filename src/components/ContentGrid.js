@@ -8,6 +8,10 @@ const ContentGrid = () => {
     { title: 'Travel Stories', description: 'Read about my adventures.' },
     { title: 'Tips & Tricks', description: 'Discover travel tips and guides.' },
     { title: 'Photography', description: 'Browse stunning photo galleries.' },
+    {
+      title: 'Quote of the Week',
+      description: 'I am a very motivated man, this is my quote of the week',
+    },
   ];
 
   return (

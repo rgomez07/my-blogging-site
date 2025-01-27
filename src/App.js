@@ -1,17 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import { Box, Typography } from '@mui/material';
 import HeroSection from './components/HeroSection';
-import ContentGrid from './components/ContentGrid';
-import './App.css';
+import BlogSection from './components/BlogSection';
+import NewsSection from './components/NewsSection';
 
-function App() {
+const App = () => {
   return (
-    <div className='app'>
+    <Router>
       <Navbar />
-      <HeroSection />
-      <ContentGrid />
-    </div>
+      <Routes>
+        <Route path='/' element={<HeroSection />} />
+        <Route path='/blogs' element={<BlogSection />} />
+        <Route path='/news' element={<NewsSection />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
