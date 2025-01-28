@@ -26,7 +26,7 @@ const HeroSection = () => {
             fontWeight: 'bold',
           }}
         >
-          Welcome to Rigo's Adventures
+          El TacoYaki
         </Typography>
       </Box>
       {/* Content Grid */}
